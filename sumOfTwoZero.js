@@ -22,3 +22,5 @@ function sumOfTwoZero(array) {
 }
 
 console.log(sumOfTwoZero([-3, -1, 0, 4, 5]));
+console.log(sumOfTwoZero([-2, -1, 0, 1, 5]));
+console.log(sumOfTwoZero([-5, -3, -2, -1, 0, 1, 4, 5]));
