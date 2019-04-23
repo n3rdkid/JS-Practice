@@ -19,19 +19,12 @@ function mergeSortedArrays(array1,array2){
 	{
 		let array1Item=array1[array1Pointer];
 		let array2Item=array2[array2Pointer];
-		console.log(`Array 1 ${array1Item} array 2 ${array2Item}`)
-		if(!array1Item)
-			array1Item=0;
-		else if(!array2Item)
-			array2Item=0;
-		if(!array1Item&&!array2Item)
-			break;
-		else if(array1Item<array2Item)
+		if((array1Item<array2Item)||!array2Item)
 		{
 			mergedArray.push(array1Item);
 			array1Item=array1[array1Pointer];
 			array1Pointer++;
-		}else if(array2Item<array1Item)
+		}else if((array2Item<array1Item) ||!array1Item)
 		{
 			mergedArray.push(array2Item);
 			array2Item=array2[array2Pointer];
